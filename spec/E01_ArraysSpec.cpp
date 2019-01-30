@@ -47,14 +47,6 @@ namespace spec
         //
         
         [TestMethod, Timeout(3000)]
-        void TestMaxPosNegSuminInValidInputCheck() {
-            int Arr1[5] = { 1, 9, 8, 2, 3 };
-            Assert::AreEqual(0,maxPosNegSum(Arr1,5), L"Array invalid input failed.", 1, 2);
-            int Arr2[5] = { -1, -9, -8, -2, -3 };
-			Assert::AreEqual(0, maxPosNegSum(Arr2, 5), L"Array invalid input failed.", 1, 2);
-        }
-        
-        [TestMethod, Timeout(3000)]
         void maxPosNegSuminsertValidInputCheck() {
             int Arr1[8] = {1, 9, 8, 2, 3, -1, -10, -5};
             Assert::AreEqual(8, maxPosNegSum(Arr1, 8), L"Valid input check failed", 1, 2);
